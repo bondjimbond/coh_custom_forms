@@ -1,4 +1,4 @@
-name = BC ELN Customizations
+name = City of Hope Customizations
 description = "Customizations and additional components"
 package = Islandora
 dependencies[] = islandora

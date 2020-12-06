@@ -1,8 +1,8 @@
-# BCELNDORA
+# City of Hope Custom Forms
 
 ## Introduction
 
-Customization module for British Columbia Electronic Libraries Network that contains custom form builder forms and form associations.
+Customization module for City of Hope that contains custom form builder forms and form associations.
 
 ## Requirements
 
@@ -31,15 +31,11 @@ The form builder forms in this module can be customized by following the followi
 
 Example Clone:
 
-BC ELN Audio Form make changes and take the generated xml file.  Open /xml/bceln_audio_form.xml and replace the file contents with that of the exported file.
+COH MODS Form make changes and take the generated xml file.  Open /xml/coh_mods.xml and replace the file contents with that of the exported file.
 
 6. Commit the changes back to the git repository. 
 
 7. Reinstall the module and all the forms that were modified will be updated.
-
-## Troubleshooting/Issues
-
-Having problems or solved a problem? Contact [discoverygarden](http://support.discoverygarden.ca).
 
 ## License
 

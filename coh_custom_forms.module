@@ -7,9 +7,9 @@
 /**
  * Implements hook_islandora_xml_form_builder_form_associations().
  */
-function bcelndora_islandora_xml_form_builder_form_associations() {
+function coh_custom_forms_islandora_xml_form_builder_form_associations() {
   return array(
-    'bceln_artwork_form' => array(
+    'coh_artwork_form' => array(
       'content_model' => 'islandora:sp_large_image_cmodel',
       'form_name' => 'City of Hope MODS Metadata',
       'dsid' => 'MODS',
@@ -18,7 +18,7 @@ function bcelndora_islandora_xml_form_builder_form_associations() {
       'self_transform' => 'islandora_cleanup_mods_extended_strict.xsl',
       'template' => FALSE,
     ),
-    'bceln_pdf_form' => array(
+    'coh_pdf_form' => array(
       'content_model' => 'islandora:sp_pdf',
       'form_name' => 'City of Hope MODS Metadata',
       'dsid' => 'MODS',
@@ -27,7 +27,7 @@ function bcelndora_islandora_xml_form_builder_form_associations() {
       'self_transform' => 'islandora_cleanup_mods_extended_strict.xsl',
       'template' => FALSE,
     ),
-    'bceln_audio_form' => array(
+    'coh_audio_form' => array(
       'content_model' => 'islandora:sp-audioCModel',
       'form_name' => 'City of Hope MODS Metadata',
       'dsid' => 'MODS',
@@ -36,7 +36,7 @@ function bcelndora_islandora_xml_form_builder_form_associations() {
       'self_transform' => 'islandora_cleanup_mods_extended_strict.xsl',
       'template' => FALSE,
     ),
-    'bceln_basic_image_form' => array(
+    'coh_basic_image_form' => array(
       'content_model' => 'islandora:sp_basic_image',
       'form_name' => 'City of Hope MODS Metadata',
       'dsid' => 'MODS',
@@ -45,7 +45,7 @@ function bcelndora_islandora_xml_form_builder_form_associations() {
       'self_transform' => 'islandora_cleanup_mods_extended_strict.xsl',
       'template' => FALSE,
     ),
-    'bceln_compound_form' => array(
+    'coh_compound_form' => array(
       'content_model' => 'islandora:compoundCModel',
       'form_name' => 'City of Hope MODS Metadata',
       'dsid' => 'MODS',
@@ -54,7 +54,7 @@ function bcelndora_islandora_xml_form_builder_form_associations() {
       'self_transform' => 'islandora_cleanup_mods_extended_strict.xsl',
       'template' => FALSE,
     ),
-    'bceln_book_form' => array(
+    'coh_book_form' => array(
       'content_model' => 'islandora:bookCModel',
       'form_name' => 'City of Hope MODS Metadata',
       'dsid' => 'MODS',
@@ -63,7 +63,7 @@ function bcelndora_islandora_xml_form_builder_form_associations() {
       'self_transform' => 'islandora_cleanup_mods_extended_strict.xsl',
       'template' => FALSE,
     ),
-    'bceln_video_form' => array(
+    'coh_video_form' => array(
       'content_model' => 'islandora:sp_videoCModel',
       'form_name' => 'City of Hope MODS Metadata',
       'dsid' => 'MODS',
@@ -78,8 +78,8 @@ function bcelndora_islandora_xml_form_builder_form_associations() {
 /**
  * Implements hook_islandora_xml_form_builder_forms().
  */
-function bcelndora_islandora_xml_form_builder_forms() {
-  $module_path = drupal_get_path('module', 'bcelndora');
+function coh_custom_forms_islandora_xml_form_builder_forms() {
+  $module_path = drupal_get_path('module', 'coh_custom_forms');
   return array(
     'City of Hope MODS Metadata' => array(
       'form_file' => "$module_path/xml/coh_mods.xml",
